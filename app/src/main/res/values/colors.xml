@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black_text">#181818</color>
     <color name="drawable_color">#4F65F6</color>
+    <color name="light_blue">#91AEE1</color>
+    <color name="light_org">#E8C9D1</color>
     <color name="bg_viewgroup">#F6F7FF</color>
     <color name="green_">#4E9E79</color>
 </resources>

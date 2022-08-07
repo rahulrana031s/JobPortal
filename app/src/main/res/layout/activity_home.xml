@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/profile_logo" />
+                app:srcCompat="@mipmap/ic_launcher" />
 
         </androidx.cardview.widget.CardView>
 
@@ -239,6 +239,7 @@
                         <androidx.recyclerview.widget.RecyclerView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
                             android:nestedScrollingEnabled="false"
                             android:id="@+id/rlvSession"/>
 
@@ -269,6 +270,7 @@
                         <androidx.recyclerview.widget.RecyclerView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
                             android:nestedScrollingEnabled="false"
                             android:id="@+id/rlvJobs"/>
 
