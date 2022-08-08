@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_marginRight="15dp"
     android:layout_marginLeft="15dp"
+    android:layout_marginBottom="15dp"
     android:orientation="vertical"
     >
     <LinearLayout
@@ -17,18 +18,19 @@
             android:gravity="left"
             android:layout_weight="@integer/material_motion_duration_long_1">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
+                android:minLines="2"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/black"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:id="@+id/tvName"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_light"
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 android:id="@+id/tvorg"/>
 
         </LinearLayout>
@@ -43,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/green_"
-                android:textSize="17sp"
+                android:textSize="13sp"
                 android:id="@+id/tvTiming"/>
         </LinearLayout>
     </LinearLayout>
@@ -60,8 +62,8 @@
             android:textSize="15sp"
             android:id="@+id/tvtype"/>
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/arrow"
             />
     </LinearLayout>

@@ -6,12 +6,18 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.example.jobportal.databinding.ActivityHomeBinding
 import com.example.jobportal.ui.adapters.NewJobAdapter
 import com.example.jobportal.ui.adapters.UpComingSessionAdapter
+import com.example.jobportal.ui.models.JobPosting
+import com.example.jobportal.ui.models.UpcomingSession
 import com.example.jobportal.ui.utils.NetworkResult
+import com.example.jobportal.ui.utils.TokenManager
 import com.example.jobportal.ui.viewModal.PortalViewModal
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.*
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
@@ -20,7 +26,11 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var viewModel: PortalViewModal
     private var upComingSessionAdapter: UpComingSessionAdapter? = null
     private var newJobAdapter: NewJobAdapter? = null
+    private var upcoming = listOf<UpcomingSession>()
+    private var newJob = listOf<JobPosting>()
 
+    @Inject
+    lateinit var tokenManager: TokenManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +39,35 @@ class HomeActivity : AppCompatActivity() {
         setVieModal()
         observeViewModal()
         setLayoutManager()
+        setListners()
+        setImage()
 
 
+    }
+
+    private fun setImage() {
+        if(tokenManager.getProfile()!=""){
+            Glide.with(this).load(tokenManager.getProfile()).into(_binding.ivProfile);
+        }
+
+    }
+
+    private fun setListners() {
+        _binding.suffle.setOnClickListener {
+            Collections.reverse(upcoming)
+            val shuffAlp = newJob.shuffled()
+
+            upComingSessionAdapter = UpComingSessionAdapter(this,upcoming)
+            _binding.rlvSession.adapter = upComingSessionAdapter
+
+            newJobAdapter = NewJobAdapter(this,shuffAlp)
+            _binding.rlvJobs.adapter = newJobAdapter
+        }
+
+
+        _binding.homes.setOnClickListener {
+            observeViewModal()
+        }
     }
 
     private fun setLayoutManager() {
@@ -48,12 +85,14 @@ class HomeActivity : AppCompatActivity() {
 
 
             it.upcoming_sessions.let {
+                upcoming = it
                 upComingSessionAdapter = UpComingSessionAdapter(this,it)
                 _binding.rlvSession.adapter = upComingSessionAdapter
 
             }
 
             it.job_postings.let {
+                newJob = it
                 newJobAdapter = NewJobAdapter(this,it)
                 _binding.rlvJobs.adapter = newJobAdapter
             }

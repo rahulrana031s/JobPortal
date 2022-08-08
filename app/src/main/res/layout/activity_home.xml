@@ -17,6 +17,7 @@
             android:id="@+id/imageView3"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
             app:srcCompat="@mipmap/app_logo" />
         <View
             android:layout_width="match_parent"
@@ -77,17 +78,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-
                         android:orientation="vertical" >
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
-                            android:textSize="17sp"
+                            android:textSize="20sp"
                             android:text="@string/overview"/>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -100,23 +100,23 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
-                                android:textSize="15sp"
+                                android:textSize="17sp"
                                 android:layout_weight="@integer/material_motion_duration_long_1"
                                 android:text="@string/profile_view"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/tv_profile_views"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:layout_marginRight="10dp"
                                 android:textColor="@color/drawable_color"
-                                android:textSize="17sp"
+                                android:textSize="22sp"
                                />
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
                                 android:text="@string/profile_view"
                                 android:src="@drawable/dases"/>
                         </LinearLayout>
@@ -131,7 +131,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
                                 android:textSize="17sp"
                                 android:layout_weight="@integer/material_motion_duration_long_1"
@@ -140,14 +140,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/tv_mentorship_sessions"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/drawable_color"
                                 android:layout_marginRight="10dp"
-                                android:textSize="17sp"
+                                android:textSize="22sp"
                              />
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
                                 android:text="@string/profile_view"
                                 android:src="@drawable/dases"/>
                         </LinearLayout>
@@ -162,23 +162,22 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
                                 android:textSize="17sp"
                                 android:layout_weight="@integer/material_motion_duration_long_1"
-                                android:text="@string/profile_view"/>
+                                android:text="@string/job_applied"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:id="@+id/tv_jobs_applied"
                                 android:textColor="@color/drawable_color"
                                 android:layout_marginRight="10dp"
-
-                                android:textSize="17sp"/>
+                                android:textSize="22sp"/>
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
                                 android:text="@string/profile_view"
                                 android:src="@drawable/dases"/>
                         </LinearLayout>
@@ -193,22 +192,22 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/black"
                                 android:textSize="17sp"
                                 android:layout_weight="@integer/material_motion_duration_long_1"
-                                android:text="@string/profile_view"/>
+                                android:text="@string/skilled_verified"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/tv_skills_verified"
-                                android:fontFamily="@font/poppins_regular"
+                                android:fontFamily="@font/poppins_medium"
                                 android:textColor="@color/drawable_color"
                                 android:layout_marginRight="10dp"
-                                android:textSize="17sp"/>
+                                android:textSize="22sp"/>
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
                                 android:text="@string/profile_view"
                                 android:src="@drawable/dases"/>
                         </LinearLayout>
@@ -229,11 +228,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
-                            android:textSize="17sp"
+                            android:textSize="20sp"
                             android:text="@string/upcoming_session"/>
 
                         <androidx.recyclerview.widget.RecyclerView
@@ -260,11 +259,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_regular"
+                            android:fontFamily="@font/poppins_medium"
                             android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"
-                            android:textSize="17sp"
+                            android:textSize="20sp"
                             android:text="@string/new_jobs"/>
 
                         <androidx.recyclerview.widget.RecyclerView
@@ -273,12 +272,8 @@
                             android:layout_marginTop="15dp"
                             android:nestedScrollingEnabled="false"
                             android:id="@+id/rlvJobs"/>
-
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
             </LinearLayout>
 
         </LinearLayout>
@@ -292,23 +287,80 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/llBottom"
         android:background="@drawable/linear_draw"
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="match_parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:gravity="right"
+            android:id="@+id/homes"
+
             android:layout_weight="@integer/material_motion_duration_long_1"
-            android:text="Home"/>
-        <TextView
-            android:layout_width="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/home_ico"
+                android:layout_marginLeft="40dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvhome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="10dp"
+                android:text="Home"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivHome"
+                app:layout_constraintStart_toStartOf="@+id/ivHome"
+                app:layout_constraintTop_toBottomOf="@+id/ivHome" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Suffle"/>
+            android:gravity="right"
+            android:id="@+id/suffle"
+            android:layout_weight="@integer/material_motion_duration_long_1"
+           >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/suffle_ico"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="10dp"
+                android:text="Suffle"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     </LinearLayout>
 

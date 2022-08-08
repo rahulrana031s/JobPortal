@@ -9,11 +9,11 @@
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/rounded_button_one.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/rounded_button_two.xml" value="0.1235" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.23775177001953127" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.18410546087449595" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20678405761718752" />
         <entry key="app/src/main/res/layout/item_view.xml" value="0.140625" />
         <entry key="app/src/main/res/layout/new_job.xml" value="0.134375" />
-        <entry key="app/src/main/res/layout/upcoming_session.xml" value="0.11955420466058764" />
+        <entry key="app/src/main/res/layout/upcoming_session.xml" value="0.1" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.140625" />
       </map>
     </option>

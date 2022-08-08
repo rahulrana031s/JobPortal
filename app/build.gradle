@@ -67,6 +67,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
+    //FireBaseAuth
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:30.3.1')
 
@@ -76,5 +77,10 @@ dependencies {
 
     // Also declare the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    //glide
+    def glide_version = "4.13.2"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
 }
 apply plugin: 'com.google.gms.google-services'

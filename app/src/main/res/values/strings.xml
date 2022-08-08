@@ -5,6 +5,8 @@
     <string name="error_message">Something Went Wrong</string>
     <string name="overview">Overview</string>
     <string name="profile_view">Profile Views</string>
+    <string name="job_applied">Jobs Applied</string>
+    <string name="skilled_verified">Skills Verified</string>
     <string name="mentor_ship">Mentorship Sessions</string>
     <string name="upcoming_session">Upcoming Sessions</string>
     <string name="new_jobs">New Jobs</string>

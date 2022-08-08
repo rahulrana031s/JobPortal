@@ -40,7 +40,7 @@ class UpComingSessionAdapter (val context: Context,private val mList: List<Upcom
 
     private fun setBg(tvtype: TextView) {
 
-        tvtype.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.rounded_button_two));
+//        tvtype.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.rounded_button_two));
 
     }
 
