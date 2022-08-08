@@ -68,6 +68,9 @@ class HomeActivity : AppCompatActivity() {
         _binding.homes.setOnClickListener {
             observeViewModal()
         }
+        _binding.ivProfile.setOnClickListener {
+            observeViewModal()
+        }
     }
 
     private fun setLayoutManager() {
