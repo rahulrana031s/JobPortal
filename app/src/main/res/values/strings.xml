@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">JobPortal</string>
+    <string name="welcome_message">Welcome Back to Skrate!!</string>
+    <string name="google_login_message">Sign In With Google</string>
+    <string name="error_message">Something Went Wrong</string>
+    <string name="overview">Overview</string>
+    <string name="profile_view">Profile Views</string>
+    <string name="job_applied">Jobs Applied</string>
+    <string name="skilled_verified">Skills Verified</string>
+    <string name="mentor_ship">Mentorship Sessions</string>
+    <string name="upcoming_session">Upcoming Sessions</string>
+    <string name="new_jobs">New Jobs</string>
+    <string name="mentor">Mentorship</string>
+</resources>
